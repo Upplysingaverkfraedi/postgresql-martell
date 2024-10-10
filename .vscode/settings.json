@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "junction.proxy.rlwy.net",
+            "port": 55303,
+            "driver": "PostgreSQL",
+            "database": "railway",
+            "username": "martell",
+            "password": "oberyn",
+            "name": "PostgreSQLRailway"
+        }
+    ]
+}
