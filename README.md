@@ -1,19 +1,6 @@
 # README
 
 # Liður 1: Ættir og Landsvæði
-!!!!
-Það koma mjög mikið af NULL í father,mother and spouse.
-!!!
-
-Fyrst var downloadað DataGrip 2024.2.2 svo var gefið fram staðsetningu á password á Tengingu við PostgreSQL á canvas TBL: PostgreSQL. Ég notaði Visual Studio Code til að gera git add . git commit -m "XXX" og git push fyrir þetta verkefni sem var tengt við DataGrip 2024.2.2.
-
-Annars var allur kóðin keyrður á sama hátt það var ýtt á kóða bútinn og ýtt svo á keyrsluhnappann.
-
-Útskýringar í kóðanum í file ""AdalpersonurTextiSp2.md"
-
-Þegar kóðin er keyrður á að koma fram 10 dálkar sem sýna upplýsingar á full_name, gender, father, mother, spouse, born, died, age, alive, books. Þetta sýnir allskonar upplýsingar eins og nafn með tilit, hvort þeir lifa og hvaða bók characteranir koma fram í.
-
-# Liður 2: Aðalpersónur
 Hér er liður 1 tilbúinn til yfirferðar. Skrefin til keyrslu eru eftirfarandi:
 
 Þið opnið fileið "Hluti 1: Ættir og landsvæði í Norður Konungsríkinu"
@@ -47,6 +34,19 @@ Keyrsla á spurningu 3:
 Hér viljiði smella á kóða bútinn fyrir spurningu 3 og keyra með statement skipuninni:
 "WITH northern_houses AS ( SELECT id AS house_id, n..."
 Þá ætti að koma tafla með 8 röðum sem inniheldur ýmis fjölskyldu nöfn í norðrinu. Fjöldinn ætti að vera lækkandi (35, 10, 8, 7, 6, 6, 6, 6, 6) og nöfnin í stafrófsröð (Stark, Karstark, Mormont, Manderly, Glover, Ryswell, Tallhart, Umber)
+
+# Liður 2: Aðalpersónur
+!!!!
+Það koma mjög mikið af NULL í father,mother and spouse.
+!!!
+
+Fyrst var downloadað DataGrip 2024.2.2 svo var gefið fram staðsetningu á password á Tengingu við PostgreSQL á canvas TBL: PostgreSQL. Ég notaði Visual Studio Code til að gera git add . git commit -m "XXX" og git push fyrir þetta verkefni sem var tengt við DataGrip 2024.2.2.
+
+Annars var allur kóðin keyrður á sama hátt það var ýtt á kóða bútinn og ýtt svo á keyrsluhnappann.
+
+Útskýringar í kóðanum í file ""AdalpersonurTextiSp2.md"
+
+Þegar kóðin er keyrður á að koma fram 10 dálkar sem sýna upplýsingar á full_name, gender, father, mother, spouse, born, died, age, alive, books. Þetta sýnir allskonar upplýsingar eins og nafn með tilit, hvort þeir lifa og hvaða bók characteranir koma fram í.
 
 # Liður 3
 ## 1. Flatarmál konungsríkja `Flatarmal.sql`
