@@ -1,5 +1,54 @@
 # README
 
+# Liður 1: Ættir og Landsvæði
+Hér er liður 1 tilbúinn til yfirferðar. Skrefin til keyrslu eru eftirfarandi:
+
+Þið opnið fileið "Hluti 1: Ættir og landsvæði í Norður Konungsríkinu"
+Downloadið IDE s.s. Datagrip og keyrið kóðann inn í réttum gagnagrunn. Frekari upplýsingar um hvernig á að komast inn í þann gagnagrunn má sjá á Canvas.
+Keyrsla á spurningu 1:
+Fyrstu spurninguna keyriði einfaldlega þegar þið smellið á kóða bútinn og ýtið á keyrsluhnapp:
+"Select k_gid AS kingdom_id, h.id AS house_id , k.name..."
+Þá fáiði upp rétta töflu þar sem útkomann ætti að vera 444 raðir með kingdom_id, house_id, kingdom_name og house_name dálkunum.
+Eftir það getiði keyrt:
+"WITH kingdoms_houses AS (SELECT k.gid AS kingdom_id....."
+til að upserta möppunina inn í töfluna. Útkoman á því ætti að vera engin sýnileg.
+
+Keyrsla á spurningu 2:
+Fyrir spurningu tvö er svipað fyrirkomulag en hún skiptist í tvo parta/kóða.
+
+Fyrsti partur:
+keyriru líkt og áðan SELECT skipunina með því að smella á kóða bútinn og keyrslu hnapp og ýta á:
+"SELECT l.gid AS location_id, h_id AS house_id...."
+Þá fáiði upp töflu þar sem útkomann ætti að vera 339 raðir með dálkunum location_id, house_id, location_name, house_name, house_region, seats titles og framvegis. Þessi tafla finnur samanburð á location nöfnum miðað við houses nöfnum og leitar þar eftir samanburð í mismunandi dálkum.
+Þaðan af getiði keyrt líkt og áðan allan bútinn með:
+"WITH location_house_mapping AS ( SELECT l_gid AS location_id....."
+Þá upsertið þið heildar möppunina í töfluna. Útkoman ætti ekki að vera sýnileg þ.e. engin tafla.
+
+Seinni partur:
+Til að keyra seinni partinn sem er aðskilin frá fyrri partinum með commentinu, -- Sýnir einungis niðurstöður fyrir norðrið (e. The North) smelliru á kóðabútinn og keyrsluhnapp og ýtir á:
+"WITH location_house_mapping AS ( SELECT l.gid AS l..."
+Þá kemur tafla sem inniheldur einungis fundnar samsvaranir þar sem Region dálkurinn er "The North" þetta þýðir að húsin í Norðrinu hafa farið í gegnum margar athuganir í mismunandi dálkum t.d. athugað eftir hvort nafnið á húsinu hafi komið fram í summary dálknum í atlas.locations.
+Útkoman hér ætti að vera tafla með 18 röðum með dálkunum location_id, house_id, location_name, house_name, house_region og framvegis.
+
+Keyrsla á spurningu 3:
+Hér viljiði smella á kóða bútinn fyrir spurningu 3 og keyra með statement skipuninni:
+"WITH northern_houses AS ( SELECT id AS house_id, n..."
+Þá ætti að koma tafla með 8 röðum sem inniheldur ýmis fjölskyldu nöfn í norðrinu. Fjöldinn ætti að vera lækkandi (35, 10, 8, 7, 6, 6, 6, 6, 6) og nöfnin í stafrófsröð (Stark, Karstark, Mormont, Manderly, Glover, Ryswell, Tallhart, Umber)
+
+# Liður 2: Aðalpersónur
+!!!!
+Það koma mjög mikið af NULL í father,mother and spouse.
+!!!
+
+Fyrst var downloadað DataGrip 2024.2.2 svo var gefið fram staðsetningu á password á Tengingu við PostgreSQL á canvas TBL: PostgreSQL. Ég notaði Visual Studio Code til að gera git add . git commit -m "XXX" og git push fyrir þetta verkefni sem var tengt við DataGrip 2024.2.2.
+
+Annars var allur kóðin keyrður á sama hátt það var ýtt á kóða bútinn og ýtt svo á keyrsluhnappann.
+
+Útskýringar í kóðanum í file ""AdalpersonurTextiSp2.md"
+
+Þegar kóðin er keyrður á að koma fram 10 dálkar sem sýna upplýsingar á full_name, gender, father, mother, spouse, born, died, age, alive, books. Þetta sýnir allskonar upplýsingar eins og nafn með tilit, hvort þeir lifa og hvaða bók characteranir koma fram í.
+
+# Liður 3
 ## 1. Flatarmál konungsríkja `Flatarmal.sql`
 
 Markmið verkefnisinns er: 
